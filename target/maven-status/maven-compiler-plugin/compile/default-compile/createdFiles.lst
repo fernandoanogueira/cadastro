@@ -1,0 +1,17 @@
+com\nogueira\cadastro\CadastroApplication.class
+com\nogueira\cadastro\service\EmpregadoService.class
+com\nogueira\cadastro\dto\EmpresaDTO.class
+com\nogueira\cadastro\dto\CartaoDTO.class
+com\nogueira\cadastro\repository\EmpresaRepository.class
+com\nogueira\cadastro\service\CartaoService.class
+com\nogueira\cadastro\controller\EmpresaController.class
+com\nogueira\cadastro\service\EmpresaService.class
+com\nogueira\cadastro\controller\CartaoController.class
+com\nogueira\cadastro\repository\CartaoRepository.class
+com\nogueira\cadastro\config\MapperConfig.class
+com\nogueira\cadastro\repository\EmpregadoRepository.class
+com\nogueira\cadastro\model\Cartao.class
+com\nogueira\cadastro\model\Empregado.class
+com\nogueira\cadastro\model\Empresa.class
+com\nogueira\cadastro\controller\EmpregadoController.class
+com\nogueira\cadastro\dto\EmpregadoDTO.class
