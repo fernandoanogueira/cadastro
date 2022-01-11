@@ -35,18 +35,19 @@ public class CartaoController {
 			return ResponseEntity.notFound().build();
 	}
 
-	@GetMapping("/cartaofiltro/{id}/{campos}")
+	@GetMapping("/cartaofiltro/{id}/{filtros}")
 	public ResponseEntity<CartaoDTO> consultarCartaoPorIdFiltro(@PathVariable(required = true) Long id,
-			@PathVariable(required = true) String filtro) {
+			@PathVariable(required = true) String filtros) {
 
 		if (id < 0) {
 			return ResponseEntity.badRequest().build();
 		}
 
 		CartaoDTO cartaoDto = service.consultarCartaoPorId(id);
+		
 		if (cartaoDto != null) {
 
-			String[] campos = filtro.split(",");
+			String[] campos = filtros.split(",");
 			
 			CartaoDTO cartaoFiltro = (CartaoDTO) FilterBeanService.mapearRetornoConformeParametros(campos, "cartaoFilter", cartaoDto);
 

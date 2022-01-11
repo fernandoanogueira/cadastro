@@ -14,10 +14,10 @@ public class FilterBeanService {
     	
         filterProvider.addFilter(filtro, SimpleBeanPropertyFilter.filterOutAllExcept(campos));
 
-        ObjectMapper om = new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
         
-        om.setFilterProvider(filterProvider);
+        objectMapper.setFilterProvider(filterProvider);
         
-        return om.convertValue(objeto, objeto.getClass());
+        return objectMapper.convertValue(objeto, objeto.getClass());
     }
 }
